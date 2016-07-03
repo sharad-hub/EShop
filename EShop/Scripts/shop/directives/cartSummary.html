@@ -1,0 +1,29 @@
+﻿<div class="aa-cartbox" ng-mouseover="cartShow()" ng-mouseleave="cartHide()">
+    <a class="aa-cart-link" href="#/cart">
+        <span class="fa fa-shopping-basket"></span>
+        <span class="aa-cart-title">SHOPPING CART</span>
+        <span class="aa-cart-notify">{{itemCount()}} </span>
+    </a>
+    <div class="aa-cartbox-summary">
+        <ul>
+            <li ng-repeat="item in cartItems">
+                <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
+                <div class="aa-cartbox-info">
+                    <h4><a href="#">{{item.name}}</a></h4>
+                    <p>{{item.count}} x {{item.price}}</p>
+                </div>
+                <a class="aa-remove-product" href="#" ng-click="removeProduct(item.id)"><span class="fa fa-times"></span></a>
+            </li>            
+            <li>
+                <span class="aa-cartbox-total-title">
+                 TOTAL :<i> {{itemCount()}} item(s)</i>
+                </span>
+                <span class="aa-cartbox-total-price">
+
+                    {{total() | currency}}
+                </span>
+            </li>
+        </ul>
+        <a class="aa-cartbox-checkout aa-primary-btn" href="#/checkout/">Checkout</a>
+    </div>
+</div>

@@ -1,0 +1,113 @@
+﻿<header id="aa-header">
+    <!-- start header top  -->
+    <div class="aa-header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-header-top-area">
+                        <!-- start header top left -->
+                        <div class="aa-header-top-left">
+                            <!-- start language -->
+                            <div class="aa-language">
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <img src="Content/ecom/img/flag/english.jpg" alt="english flag">ENGLISH
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#"><img src="Content/ecom/img/flag/french.jpg" alt="">FRENCH</a></li>
+                                        <li><a href="#"><img src="Content/ecom/img/flag/english.jpg" alt="">ENGLISH</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- / language -->
+                            <!-- start currency -->
+                            <div class="aa-currency">
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <i class="fa fa-usd"></i>USD
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#"><i class="fa fa-euro"></i>EURO</a></li>
+                                        <li><a href="#"><i class="fa fa-jpy"></i>YEN</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- / currency -->
+                            <!-- start cellphone -->
+                            <div class="cellphone hidden-xs">
+                                <p><span class="fa fa-phone"></span>00-62-658-658</p>
+                            </div>
+                            <!-- / cellphone -->
+                        </div>
+                        <!-- / header top left -->
+                        <div class="aa-header-top-right">
+                            <ul class="aa-head-top-nav-right">
+                                <li><a href="#/account/">My Account</a></li>
+                                <li class="hidden-xs"><a href="#/wishlist/">Wishlist</a></li>
+                                <li class="hidden-xs"><a href="#/cart/">My Cart</a></li>
+                                <li class="hidden-xs"><a href="#/checkout/">Checkout</a></li>
+                                <li ng-if="userData.isUserLoggedIn">
+                                    <!--<a href="#/"> {{username}}<i class="fa fa-user fa-fw"></i></a>-->
+                                    <div class="dropdown">
+                                        <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            {{username}} <span class="caret"></span>
+                                        </button>-->
+                                        <button id="btn-caption" type="button" class="btn btn-default">{{username}}</button>
+                                        <button type="button" class="btnx btnx-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Split button!</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">My Profile</a></li>
+                                            <li class="divider"></li>
+                                            <li><a ng-click="logout()">Logout</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li ng-if="!userData.isUserLoggedIn"><a href="#/login">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / header top  -->
+    <!-- start header bottom  -->
+    <div class="aa-header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-header-bottom-area">
+                        <!-- logo  -->
+                        <div class="aa-logo">
+                            <!-- Text based logo -->
+                            <a href="index.html">
+                                <span class="fa fa-shopping-cart"></span>
+                                <p>daily<strong>Shop</strong> <span>Your Shopping Partner</span></p>
+                            </a>
+                            <!-- img based logo -->
+                            <!-- <a href="index.html"><img src="Content/ecom/img/logo.jpg" alt="logo img"></a> -->
+                        </div>
+                        <!-- / logo  -->
+                        <!-- cart box -->
+                        <cart-summary></cart-summary>
+                        <!-- / cart box -->
+                        <!-- search box -->
+                        <div class="aa-search-box">
+                            <form action="">
+                                <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
+                                <button type="submit"><span class="fa fa-search"></span></button>
+                            </form>
+                        </div>
+                        <!-- / search box -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / header bottom  -->
+</header>

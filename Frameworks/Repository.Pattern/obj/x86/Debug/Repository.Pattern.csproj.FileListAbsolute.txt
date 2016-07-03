@@ -1,0 +1,5 @@
+D:\NON DC\MYProjects\JUN_Work\Frameworks\Repository.Pattern\bin\x86\Debug\Repository.Pattern.dll.config
+D:\NON DC\MYProjects\JUN_Work\Frameworks\Repository.Pattern\bin\x86\Debug\Repository.Pattern.dll
+D:\NON DC\MYProjects\JUN_Work\Frameworks\Repository.Pattern\bin\x86\Debug\Repository.Pattern.pdb
+D:\NON DC\MYProjects\JUN_Work\Frameworks\Repository.Pattern\obj\x86\Debug\Repository.Pattern.dll
+D:\NON DC\MYProjects\JUN_Work\Frameworks\Repository.Pattern\obj\x86\Debug\Repository.Pattern.pdb

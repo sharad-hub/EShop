@@ -1,0 +1,33 @@
+﻿
+<section id="menu">
+    <div class="container">
+        <div class="menu-area">
+            <!-- Navbar -->
+            <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <!-- Left nav -->
+                    <ul class="nav navbar-nav">
+                        <li ng-repeat="menu in menus | filter:{ParentId : 0}: true" ng-include="'treeMenu'"></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+   
+    <script type="text/ng-template" id="treeMenu">
+        <a ng-class="{'has-submenu': ((menus | filter:{ParentId : menu.Id}).length > 0)}" href="{{menu.NavigationPath}}">{{menu.Name}}  <span ng-if="(menus | filter:{ParentId : menu.Id}).length > 0" class="caret"></span> </a>
+        <ul class="dropdown-menu" ng-if="(menus | filter:{ParentId : menu.Id}).length > 0">
+            <li ng-repeat="menu in menus | filter:{ParentId : menu.Id}: true" ng-include="'treeMenu'"></li>
+        </ul>
+    </script>
+  
+</section>

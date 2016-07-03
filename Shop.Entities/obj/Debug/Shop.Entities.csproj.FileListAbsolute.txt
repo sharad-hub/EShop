@@ -1,0 +1,12 @@
+D:\NON DC\EShop\Shop.Entities\bin\Debug\Shop.Entities.dll
+D:\NON DC\EShop\Shop.Entities\bin\Debug\Shop.Entities.pdb
+D:\NON DC\EShop\Shop.Entities\bin\Debug\Repository.Pattern.dll
+D:\NON DC\EShop\Shop.Entities\bin\Debug\Repository.Pattern.Ef6.dll
+D:\NON DC\EShop\Shop.Entities\bin\Debug\EntityFramework.dll
+D:\NON DC\EShop\Shop.Entities\bin\Debug\LinqKit.dll
+D:\NON DC\EShop\Shop.Entities\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\NON DC\EShop\Shop.Entities\bin\Debug\Repository.Pattern.Ef6.pdb
+D:\NON DC\EShop\Shop.Entities\bin\Debug\Repository.Pattern.pdb
+D:\NON DC\EShop\Shop.Entities\obj\Debug\Shop.Entities.csprojResolveAssemblyReference.cache
+D:\NON DC\EShop\Shop.Entities\obj\Debug\Shop.Entities.dll
+D:\NON DC\EShop\Shop.Entities\obj\Debug\Shop.Entities.pdb
